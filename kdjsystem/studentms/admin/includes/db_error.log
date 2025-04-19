@@ -1,0 +1,5 @@
+[17-Mar-2025 12:26:50 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'StuID' in 'where clause' in C:\xamp\htdocs\kdjsystem\studentms\admin\add-students.php:28
+Stack trace:
+#0 C:\xamp\htdocs\kdjsystem\studentms\admin\add-students.php(28): PDOStatement->execute()
+#1 {main}
+  thrown in C:\xamp\htdocs\kdjsystem\studentms\admin\add-students.php on line 28

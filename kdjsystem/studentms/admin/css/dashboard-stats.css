@@ -1,0 +1,95 @@
+/* Dashboard Statistics Styles */
+.icon-square {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.icon-square i {
+    font-size: 24px;
+}
+
+.report-inner-card {
+    transition: transform 0.3s ease;
+}
+
+.report-inner-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Gender Distribution Cards */
+.gender-stats .card {
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.gender-stats .card-title {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.gender-stats h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.gender-stats p {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+/* Teacher Qualifications Table */
+.table-responsive {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+    color: #495057;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.table td {
+    vertical-align: middle;
+    color: #6c757d;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .gender-stats .card {
+        margin-bottom: 1rem;
+    }
+    
+    .icon-square {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .icon-square i {
+        font-size: 20px;
+    }
+    
+    .gender-stats h3 {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,158 @@
+/* Form Styles */
+.student-form {
+    margin-bottom: 2rem;
+}
+
+.card {
+    margin-bottom: 1.5rem;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    padding: 1rem;
+    font-weight: 500;
+}
+
+.card-header i {
+    margin-right: 0.5rem;
+}
+
+.student-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.student-form .form-group label {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+    color: #1F1F1F;
+}
+
+.student-form .required-field::after {
+    content: "*";
+    color: #dc3545;
+    margin-left: 4px;
+}
+
+.student-form .form-control {
+    border: 1px solid #CED4DA;
+    padding: 0.5rem 0.75rem;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.student-form .form-control:focus {
+    border-color: #4B49AC;
+    box-shadow: 0 0 0 0.2rem rgba(75, 73, 172, 0.25);
+}
+
+.student-form .select2-container--default .select2-selection--single {
+    border: 1px solid #CED4DA;
+    height: 38px;
+    padding: 8px 12px;
+}
+
+.student-form .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 36px;
+}
+
+.student-form .image-preview {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px dashed #CED4DA;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.student-form .image-preview img {
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.student-form .form-actions {
+    padding-top: 1rem;
+    border-top: 1px solid #E9ECEF;
+}
+
+.student-form .btn {
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+.student-form .btn i {
+    margin-right: 0.5rem;
+}
+
+.student-form .btn-primary {
+    background-color: #4B49AC;
+    border-color: #4B49AC;
+}
+
+.student-form .btn-primary:hover {
+    background-color: #3F3E91;
+    border-color: #3F3E91;
+}
+
+.student-form .btn-light {
+    background-color: #F8F9FA;
+    border-color: #CED4DA;
+}
+
+.student-form .btn-light:hover {
+    background-color: #E9ECEF;
+    border-color: #CED4DA;
+}
+
+.student-form .alert {
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+.student-form .table {
+    margin-bottom: 0;
+}
+
+.student-form .table th {
+    border-top: none;
+    background-color: #F8F9FA;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.student-form .table td {
+    vertical-align: middle;
+}
+
+/* Filter Styles */
+.student-form .form-inline .form-control {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .student-form .form-inline .form-control {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .student-form .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .student-form .d-sm-flex {
+        flex-direction: column;
+    }
+    
+    .student-form .ml-auto {
+        margin-left: 0 !important;
+        margin-top: 1rem;
+    }
+}

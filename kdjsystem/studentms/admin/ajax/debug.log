@@ -1,0 +1,965 @@
+[2025-03-21 13:46:02] Request data: Array
+(
+    [classId] => 18
+    [className] => SS
+    [level] => 3
+    [session] => 2024/2025
+    [term] => 3rd Term
+)
+
+[2025-03-21 13:46:02] SQL Query: SELECT s.ID, s.StudentName, s.StudentEmail 
+               FROM tblstudent s 
+               WHERE s.StudentClass = :className 
+               AND s.Level = :level
+               AND s.Session = :session
+               AND s.Term = :term
+               ORDER BY s.StudentName ASC
+[2025-03-21 13:46:02] Query results: Array
+(
+    [count] => 1
+    [params] => Array
+        (
+            [className] => SS
+            [level] => 3
+            [session] => 2024/2025
+            [term] => 3rd Term
+        )
+
+    [first_record] => Array
+        (
+            [ID] => 3
+            [StudentName] => Ahmed olakunle
+            [StudentEmail] => ahmed@kdjschool.com
+        )
+
+)
+
+[2025-03-21 13:50:54] No class ID provided
+[2025-03-21 13:54:05] No class ID provided
+[2025-03-21 14:20:26] Received class ID: 17
+[2025-03-21 14:20:26] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 14:20:26] Class details: Array
+(
+    [ID] => 17
+    [ClassName] => SS
+    [Level] => 2
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => SS 2
+)
+
+[2025-03-21 14:20:26] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 14:20:26] Found students: 1
+[2025-03-21 14:20:26] Student data: Array
+(
+    [ID] => 2
+    [StudentName] => Hauwa Osavize
+    [StudentEmail] => hauwa@kdjschool.com
+)
+
+[2025-03-21 14:28:15] Received class ID: 26
+[2025-03-21 14:28:15] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 14:28:15] Class details: Array
+(
+    [ID] => 26
+    [ClassName] => Basic
+    [Level] => 2
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => Basic 2
+)
+
+[2025-03-21 14:28:15] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 14:28:15] Found students: 0
+[2025-03-21 14:28:15] No students found
+[2025-03-21 14:28:18] Received class ID: 19
+[2025-03-21 14:28:18] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 14:28:18] Class details: Array
+(
+    [ID] => 19
+    [ClassName] => JS
+    [Level] => 1
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => JS 1
+)
+
+[2025-03-21 14:28:18] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 14:28:18] Found students: 1
+[2025-03-21 14:28:18] Student data: Array
+(
+    [ID] => 4
+    [StudentName] => Dorcas
+    [StudentEmail] => dorcas@kdjschool.com
+)
+
+[2025-03-21 14:28:23] Received class ID: 20
+[2025-03-21 14:28:23] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 14:28:23] Class details: Array
+(
+    [ID] => 20
+    [ClassName] => JS
+    [Level] => 2
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => JS 2
+)
+
+[2025-03-21 14:28:23] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 14:28:23] Found students: 1
+[2025-03-21 14:28:23] Student data: Array
+(
+    [ID] => 5
+    [StudentName] => Isaac Bola
+    [StudentEmail] => isaac@kdjschool.com
+)
+
+[2025-03-21 14:28:42] Received class ID: 18
+[2025-03-21 14:28:42] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 14:28:42] Class details: Array
+(
+    [ID] => 18
+    [ClassName] => SS
+    [Level] => 3
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => SS 3
+)
+
+[2025-03-21 14:28:42] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 14:28:42] Found students: 2
+[2025-03-21 14:28:42] Student data: Array
+(
+    [ID] => 8
+    [StudentName] => Abigael Oyin
+    [StudentEmail] => abigael@kdjschool.com
+)
+
+[2025-03-21 14:28:42] Student data: Array
+(
+    [ID] => 3
+    [StudentName] => Ahmed olakunle
+    [StudentEmail] => ahmed@kdjschool.com
+)
+
+[2025-03-21 14:29:43] Received class ID: 18
+[2025-03-21 14:29:43] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 14:29:43] Class details: Array
+(
+    [ID] => 18
+    [ClassName] => SS
+    [Level] => 3
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => SS 3
+)
+
+[2025-03-21 14:29:43] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 14:29:43] Found students: 2
+[2025-03-21 14:29:43] Student data: Array
+(
+    [ID] => 8
+    [StudentName] => Abigael Oyin
+    [StudentEmail] => abigael@kdjschool.com
+)
+
+[2025-03-21 14:29:43] Student data: Array
+(
+    [ID] => 3
+    [StudentName] => Ahmed olakunle
+    [StudentEmail] => ahmed@kdjschool.com
+)
+
+[2025-03-21 14:33:32] Received class ID: 18
+[2025-03-21 14:33:32] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 14:33:32] Class details: Array
+(
+    [ID] => 18
+    [ClassName] => SS
+    [Level] => 3
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => SS 3
+)
+
+[2025-03-21 14:33:32] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 14:33:32] Found students: 2
+[2025-03-21 14:33:32] Student data: Array
+(
+    [ID] => 8
+    [StudentName] => Abigael Oyin
+    [StudentEmail] => abigael@kdjschool.com
+)
+
+[2025-03-21 14:33:32] Student data: Array
+(
+    [ID] => 3
+    [StudentName] => Ahmed olakunle
+    [StudentEmail] => ahmed@kdjschool.com
+)
+
+[2025-03-21 14:36:00] Received class ID: 18
+[2025-03-21 14:36:00] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 14:36:00] Class details: Array
+(
+    [ID] => 18
+    [ClassName] => SS
+    [Level] => 3
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => SS 3
+)
+
+[2025-03-21 14:36:00] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 14:36:00] Found students: 2
+[2025-03-21 14:36:00] Student data: Array
+(
+    [ID] => 8
+    [StudentName] => Abigael Oyin
+    [StudentEmail] => abigael@kdjschool.com
+)
+
+[2025-03-21 14:36:00] Student data: Array
+(
+    [ID] => 3
+    [StudentName] => Ahmed olakunle
+    [StudentEmail] => ahmed@kdjschool.com
+)
+
+[2025-03-21 14:36:33] Received class ID: 17
+[2025-03-21 14:36:33] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 14:36:33] Class details: Array
+(
+    [ID] => 17
+    [ClassName] => SS
+    [Level] => 2
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => SS 2
+)
+
+[2025-03-21 14:36:33] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 14:36:33] Found students: 1
+[2025-03-21 14:36:33] Student data: Array
+(
+    [ID] => 2
+    [StudentName] => Hauwa Osavize
+    [StudentEmail] => hauwa@kdjschool.com
+)
+
+[2025-03-21 14:39:24] Received class ID: 17
+[2025-03-21 14:39:24] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 14:39:24] Class details: Array
+(
+    [ID] => 17
+    [ClassName] => SS
+    [Level] => 2
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => SS 2
+)
+
+[2025-03-21 14:39:24] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 14:39:24] Found students: 1
+[2025-03-21 14:39:24] Student data: Array
+(
+    [ID] => 2
+    [StudentName] => Hauwa Osavize
+    [StudentEmail] => hauwa@kdjschool.com
+)
+
+[2025-03-21 14:45:06] Received class ID: 18
+[2025-03-21 14:45:06] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 14:45:06] Class details: Array
+(
+    [ID] => 18
+    [ClassName] => SS
+    [Level] => 3
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => SS 3
+)
+
+[2025-03-21 14:45:06] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 14:45:06] Found students: 2
+[2025-03-21 14:45:06] Student data: Array
+(
+    [ID] => 8
+    [StudentName] => Abigael Oyin
+    [StudentEmail] => abigael@kdjschool.com
+)
+
+[2025-03-21 14:45:06] Student data: Array
+(
+    [ID] => 3
+    [StudentName] => Ahmed olakunle
+    [StudentEmail] => ahmed@kdjschool.com
+)
+
+[2025-03-21 14:46:03] Received class ID: 25
+[2025-03-21 14:46:03] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 14:46:03] Class details: Array
+(
+    [ID] => 25
+    [ClassName] => Basic
+    [Level] => 1
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => Basic 1
+)
+
+[2025-03-21 14:46:03] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 14:46:03] Found students: 0
+[2025-03-21 14:46:03] No students found
+[2025-03-21 14:46:05] Received class ID: 26
+[2025-03-21 14:46:05] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 14:46:05] Class details: Array
+(
+    [ID] => 26
+    [ClassName] => Basic
+    [Level] => 2
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => Basic 2
+)
+
+[2025-03-21 14:46:05] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 14:46:05] Found students: 0
+[2025-03-21 14:46:05] No students found
+[2025-03-21 14:46:06] Received class ID: 27
+[2025-03-21 14:46:06] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 14:46:06] Class details: Array
+(
+    [ID] => 27
+    [ClassName] => Basic
+    [Level] => 3
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => Basic 3
+)
+
+[2025-03-21 14:46:06] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 14:46:06] Found students: 1
+[2025-03-21 14:46:06] Student data: Array
+(
+    [ID] => 6
+    [StudentName] => Ruth Bola
+    [StudentEmail] => ruth@kdjschool.com
+)
+
+[2025-03-21 14:46:08] Received class ID: 19
+[2025-03-21 14:46:08] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 14:46:08] Class details: Array
+(
+    [ID] => 19
+    [ClassName] => JS
+    [Level] => 1
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => JS 1
+)
+
+[2025-03-21 14:46:08] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 14:46:08] Found students: 1
+[2025-03-21 14:46:08] Student data: Array
+(
+    [ID] => 4
+    [StudentName] => Dorcas
+    [StudentEmail] => dorcas@kdjschool.com
+)
+
+[2025-03-21 14:46:12] Received class ID: 22
+[2025-03-21 14:46:12] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 14:46:12] Class details: Array
+(
+    [ID] => 22
+    [ClassName] => JS
+    [Level] => 3
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => JS 3
+)
+
+[2025-03-21 14:46:12] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 14:46:12] Found students: 1
+[2025-03-21 14:46:12] Student data: Array
+(
+    [ID] => 7
+    [StudentName] => Mustapha Ali
+    [StudentEmail] => mustapha@kdjschool.com
+)
+
+[2025-03-21 14:48:19] Received class ID: 18
+[2025-03-21 14:48:19] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 14:48:19] Class details: Array
+(
+    [ID] => 18
+    [ClassName] => SS
+    [Level] => 3
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => SS 3
+)
+
+[2025-03-21 14:48:19] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 14:48:19] Found students: 2
+[2025-03-21 14:48:19] Student data: Array
+(
+    [ID] => 8
+    [StudentName] => Abigael Oyin
+    [StudentEmail] => abigael@kdjschool.com
+)
+
+[2025-03-21 14:48:19] Student data: Array
+(
+    [ID] => 3
+    [StudentName] => Ahmed olakunle
+    [StudentEmail] => ahmed@kdjschool.com
+)
+
+[2025-03-21 14:51:07] Received class ID: 18
+[2025-03-21 14:51:07] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 14:51:07] Class details: Array
+(
+    [ID] => 18
+    [ClassName] => SS
+    [Level] => 3
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => SS 3
+)
+
+[2025-03-21 14:51:07] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 14:51:07] Found students: 2
+[2025-03-21 14:51:07] Student data: Array
+(
+    [ID] => 8
+    [StudentName] => Abigael Oyin
+    [StudentEmail] => abigael@kdjschool.com
+)
+
+[2025-03-21 14:51:07] Student data: Array
+(
+    [ID] => 3
+    [StudentName] => Ahmed olakunle
+    [StudentEmail] => ahmed@kdjschool.com
+)
+
+[2025-03-21 14:58:50] Received class ID: 31
+[2025-03-21 14:58:50] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 14:58:50] Class details: Array
+(
+    [ID] => 31
+    [ClassName] => SS
+    [Level] => 2
+    [Session] => 2024/2025
+    [Term] => 1st Term
+    [ClassFullName] => SS 2
+)
+
+[2025-03-21 14:58:50] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 14:58:50] Found students: 0
+[2025-03-21 14:58:50] No students found
+[2025-03-21 14:58:55] Received class ID: 17
+[2025-03-21 14:58:55] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 14:58:55] Class details: Array
+(
+    [ID] => 17
+    [ClassName] => SS
+    [Level] => 2
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => SS 2
+)
+
+[2025-03-21 14:58:55] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 14:58:55] Found students: 1
+[2025-03-21 14:58:55] Student data: Array
+(
+    [ID] => 2
+    [StudentName] => Hauwa Osavize
+    [StudentEmail] => hauwa@kdjschool.com
+)
+
+[2025-03-21 15:01:18] Received class ID: 17
+[2025-03-21 15:01:18] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 15:01:18] Class details: Array
+(
+    [ID] => 17
+    [ClassName] => SS
+    [Level] => 2
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => SS 2
+)
+
+[2025-03-21 15:01:18] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 15:01:18] Found students: 1
+[2025-03-21 15:01:18] Student data: Array
+(
+    [ID] => 2
+    [StudentName] => Hauwa Osavize
+    [StudentEmail] => hauwa@kdjschool.com
+)
+
+[2025-03-21 15:10:42] Received class ID: 18
+[2025-03-21 15:10:42] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 15:10:42] Class details: Array
+(
+    [ID] => 18
+    [ClassName] => SS
+    [Level] => 3
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => SS 3
+)
+
+[2025-03-21 15:10:42] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 15:10:42] Found students: 2
+[2025-03-21 15:10:42] Student data: Array
+(
+    [ID] => 8
+    [StudentName] => Abigael Oyin
+    [StudentEmail] => abigael@kdjschool.com
+)
+
+[2025-03-21 15:10:42] Student data: Array
+(
+    [ID] => 3
+    [StudentName] => Ahmed olakunle
+    [StudentEmail] => ahmed@kdjschool.com
+)
+
+[2025-03-21 15:11:55] Received class ID: 17
+[2025-03-21 15:11:55] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 15:11:55] Class details: Array
+(
+    [ID] => 17
+    [ClassName] => SS
+    [Level] => 2
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => SS 2
+)
+
+[2025-03-21 15:11:55] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 15:11:55] Found students: 1
+[2025-03-21 15:11:55] Student data: Array
+(
+    [ID] => 2
+    [StudentName] => Hauwa Osavize
+    [StudentEmail] => hauwa@kdjschool.com
+)
+
+[2025-03-21 15:11:57] Received class ID: 23
+[2025-03-21 15:11:57] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 15:11:57] Class details: Array
+(
+    [ID] => 23
+    [ClassName] => Nursery
+    [Level] => 1
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => Nursery 1
+)
+
+[2025-03-21 15:11:57] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 15:11:57] Found students: 0
+[2025-03-21 15:11:57] No students found
+[2025-03-21 15:15:58] Received class ID: 18
+[2025-03-21 15:15:58] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 15:15:58] Class details: Array
+(
+    [ID] => 18
+    [ClassName] => SS
+    [Level] => 3
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => SS 3
+)
+
+[2025-03-21 15:15:58] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 15:15:58] Found students: 2
+[2025-03-21 15:15:58] Student data: Array
+(
+    [ID] => 8
+    [StudentName] => Abigael Oyin
+    [StudentEmail] => abigael@kdjschool.com
+)
+
+[2025-03-21 15:15:58] Student data: Array
+(
+    [ID] => 3
+    [StudentName] => Ahmed olakunle
+    [StudentEmail] => ahmed@kdjschool.com
+)
+
+[2025-03-21 15:23:03] Received class ID: 29
+[2025-03-21 15:23:03] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 15:23:03] Class details: Array
+(
+    [ID] => 29
+    [ClassName] => Basic
+    [Level] => 5
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => Basic 5
+)
+
+[2025-03-21 15:23:03] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 15:23:03] Found students: 0
+[2025-03-21 15:23:03] No students found
+[2025-03-21 15:25:08] Received class ID: 17
+[2025-03-21 15:25:08] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 15:25:08] Class details: Array
+(
+    [ID] => 17
+    [ClassName] => SS
+    [Level] => 2
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => SS 2
+)
+
+[2025-03-21 15:25:08] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 15:25:08] Found students: 1
+[2025-03-21 15:25:08] Student data: Array
+(
+    [ID] => 2
+    [StudentName] => Hauwa Osavize
+    [StudentEmail] => hauwa@kdjschool.com
+)
+
+[2025-03-21 15:28:51] Received class ID: 29
+[2025-03-21 15:28:51] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 15:28:51] Class details: Array
+(
+    [ID] => 29
+    [ClassName] => Basic
+    [Level] => 5
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => Basic 5
+)
+
+[2025-03-21 15:28:51] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 15:28:51] Found students: 0
+[2025-03-21 15:28:51] No students found
+[2025-03-21 15:31:17] Received class ID: 18
+[2025-03-21 15:31:17] Class query: SELECT c.ID, c.ClassName, c.Level, c.Session, c.Term,
+                CONCAT(c.ClassName, ' ', c.Level) as ClassFullName 
+                FROM tblclass c 
+                WHERE c.ID = :classId
+[2025-03-21 15:31:17] Class details: Array
+(
+    [ID] => 18
+    [ClassName] => SS
+    [Level] => 3
+    [Session] => 2024/2025
+    [Term] => 3rd Term
+    [ClassFullName] => SS 3
+)
+
+[2025-03-21 15:31:17] Student query: SELECT s.ID, s.StudentName, s.StudentEmail 
+                   FROM tblstudent s 
+                   INNER JOIN tblclass c ON c.ID = :classId
+                   WHERE s.StudentClass = c.ClassName 
+                   AND s.Level = c.Level 
+                   AND s.Session = c.Session 
+                   AND s.Term = c.Term 
+                   ORDER BY s.StudentName ASC
+[2025-03-21 15:31:17] Found students: 2
+[2025-03-21 15:31:17] Student data: Array
+(
+    [ID] => 8
+    [StudentName] => Abigael Oyin
+    [StudentEmail] => abigael@kdjschool.com
+)
+
+[2025-03-21 15:31:17] Student data: Array
+(
+    [ID] => 3
+    [StudentName] => Ahmed olakunle
+    [StudentEmail] => ahmed@kdjschool.com
+)
+
