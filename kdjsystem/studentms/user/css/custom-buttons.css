@@ -1,0 +1,72 @@
+.action-buttons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.btn-action {
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    height: 32px;
+    border: none;
+}
+
+.btn-action i {
+    font-size: 16px;
+}
+
+.btn-edit {
+    background-color: #7571f9;
+    color: #fff;
+}
+
+.btn-edit:hover {
+    background-color: #5a57f4;
+    color: #fff;
+}
+
+.btn-view {
+    background-color: #2196f3;
+    color: #fff;
+}
+
+.btn-view:hover {
+    background-color: #1976d2;
+    color: #fff;
+}
+
+.btn-delete {
+    background-color: #ff4081;
+    color: #fff;
+}
+
+.btn-delete:hover {
+    background-color: #f50057;
+    color: #fff;
+}
+
+/* Tooltip styles */
+.btn-action[title] {
+    position: relative;
+}
+
+.btn-action[title]:hover:after {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 8px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    margin-bottom: 5px;
+    z-index: 1000;
+}
