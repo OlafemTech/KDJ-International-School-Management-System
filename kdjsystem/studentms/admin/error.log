@@ -1,0 +1,42 @@
+[17-Mar-2025 13:32:52 Europe/Berlin] Error in add-student.php: Selected class, level, session, and term combination does not exist. Please add the class first.
+[17-Mar-2025 13:33:47 Europe/Berlin] Error in add-student.php: Selected class, level, session, and term combination does not exist. Please add the class first.
+[17-Mar-2025 13:39:25 Europe/Berlin] Error in add-student.php: Selected class combination does not exist. Please add the class first with:<br>
+                              - Class: SS<br>
+                              - Level: 3<br>
+                              - Session: 2024/2025<br>
+                              - Term: 3rd Term
+[17-Mar-2025 13:40:32 Europe/Berlin] Error in add-student.php: Selected class combination does not exist. Please add the class first with:<br>
+                              - Class: SS<br>
+                              - Level: 3<br>
+                              - Session: 2024/2025<br>
+                              - Term: 2nd Term
+[17-Mar-2025 14:30:10 Europe/Berlin] Error in add-student.php: Selected class combination does not exist. Please add the class first with:<br>
+                              - Class: JS<br>
+                              - Level: 3<br>
+                              - Session: 2024/2025<br>
+                              - Term: Third
+[17-Mar-2025 14:36:10 Europe/Berlin] Error in add-student.php: Selected class combination does not exist. Please add the class first with:<br>
+                              - Class: JS<br>
+                              - Level: 3<br>
+                              - Session: 2024/2025<br>
+                              - Term: Third
+[17-Mar-2025 14:43:06 Europe/Berlin] Error in add-student.php: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Image' in 'field list'
+[17-Mar-2025 14:53:58 Europe/Berlin] Error in add-student.php: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Image' in 'field list'
+[17-Mar-2025 14:55:14 Europe/Berlin] Error in add-student.php: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Image' in 'field list'
+[17-Mar-2025 15:00:25 Europe/Berlin] Error in add-student.php: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'FatherOccupation' in 'field list'
+[17-Mar-2025 15:03:48 Europe/Berlin] Error in add-student.php: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'FatherOccupation' in 'field list'
+[17-Mar-2025 15:08:15 Europe/Berlin] Error in add-student.php: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'studentmsdb.tblclass' doesn't exist
+[17-Mar-2025 15:15:41 Europe/Berlin] Error in add-student.php: Selected class combination does not exist. Please add the class first with:<br>
+                              - Class: SS<br>
+                              - Level: 3<br>
+                              - Session: 2024/2025<br>
+                              - Term: 3rd Term
+[17-Mar-2025 15:29:46 Europe/Berlin] Error in add-student.php: Email already registered
+[17-Mar-2025 15:51:38 Europe/Berlin] Error in add-student.php: Selected class combination does not exist. Please add the class first with:<br>
+                              - Class: SS<br>
+                              - Level: 1<br>
+                              - Session: 2024/2025<br>
+                              - Term: 3rd Term
+[20-Mar-2025 10:17:45 Europe/Berlin] PHP Warning:  Undefined array key "Level" in C:\xamp\htdocs\kdjsystem\studentms\admin\add-student.php on line 34
+[20-Mar-2025 10:17:45 Europe/Berlin] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xamp\htdocs\kdjsystem\studentms\admin\add-student.php on line 34
+[20-Mar-2025 10:17:45 Europe/Berlin] Error in add-student.php: Please fill all required fields
