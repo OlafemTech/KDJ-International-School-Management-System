@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Simple-Line-Icons';
+    src: url('../fonts/Simple-Line-Icons.eot?v=2.4.0');
+    src: url('../fonts/Simple-Line-Icons.eot?v=2.4.0#iefix') format('embedded-opentype'),
+         url('../fonts/Simple-Line-Icons.woff2?v=2.4.0') format('woff2'),
+         url('../fonts/Simple-Line-Icons.ttf?v=2.4.0') format('truetype'),
+         url('../fonts/Simple-Line-Icons.woff?v=2.4.0') format('woff'),
+         url('../fonts/Simple-Line-Icons.svg?v=2.4.0#simple-line-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Optimize font loading */
+}
+
+/* Use the icon font with FontAwesome fallback */
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'Simple-Line-Icons', 'FontAwesome', sans-serif;
+    font-synthesis: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+}
+
+/* Essential icons for teacher dashboard */
+.icon-home:before { content: "\e069"; }
+.icon-user:before { content: "\e005"; }
+.icon-people:before { content: "\e001"; }
+.icon-book-open:before { content: "\e04c"; }
+.icon-graduation:before { content: "\e019"; }
+.icon-calendar:before { content: "\e075"; }
+.icon-clock:before { content: "\e081"; }
+.icon-badge:before { content: "\e028"; }
+.icon-bell:before { content: "\e027"; }
+.icon-settings:before { content: "\e09a"; }
+.icon-login:before { content: "\e066"; }
+.icon-logout:before { content: "\e065"; }
+.icon-check:before { content: "\e080"; }
+.icon-close:before { content: "\e082"; }
+.icon-plus:before { content: "\e095"; }
+.icon-minus:before { content: "\e615"; }
+.icon-pencil:before { content: "\e05f"; }
+.icon-trash:before { content: "\e054"; }
+.icon-envelope:before { content: "\e086"; }
+.icon-lock:before { content: "\e08e"; }
+.icon-refresh:before { content: "\e098"; }
+.icon-list:before { content: "\e067"; }
+.icon-grid:before { content: "\e06a"; }
+.icon-doc:before { content: "\e04d"; }
+.icon-info:before { content: "\e08b"; }
+.icon-question:before { content: "\e08c"; }
+
+/* Navigation icons */
+.icon-arrow-left:before { content: "\e092"; }
+.icon-arrow-right:before { content: "\e093"; }
+.icon-arrow-up:before { content: "\e094"; }
+.icon-arrow-down:before { content: "\e604"; }
+.icon-menu:before { content: "\e601"; }
+
+/* Status icons */
+.icon-ban:before { content: "\e07c"; }
+.icon-bubble:before { content: "\e07d"; }
+.icon-star:before { content: "\e09b"; }
+.icon-heart:before { content: "\e08a"; }
+.icon-bulb:before { content: "\e076"; }
+.icon-chart:before { content: "\e077"; }
+
+/* Action icons */
+.icon-paper-clip:before { content: "\e091"; }
+.icon-paper-plane:before { content: "\e090"; }
+.icon-picture:before { content: "\e07f"; }
+.icon-camera:before { content: "\e07e"; }
+.icon-file:before { content: "\e085"; }
+.icon-folder:before { content: "\e089"; }
+
+/* Ensure icons are properly centered */
+[class^="icon-"], [class*=" icon-"] {
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Add hover effect for interactive icons */
+a[class^="icon-"]:hover, a[class*=" icon-"]:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* Add specific sizes for different contexts */
+.icon-lg {
+    font-size: 1.33333333em;
+    line-height: 0.75em;
+    vertical-align: -15%;
+}
+.icon-2x {
+    font-size: 2em;
+}
+.icon-3x {
+    font-size: 3em;
+}
+.icon-4x {
+    font-size: 4em;
+}
+.icon-5x {
+    font-size: 5em;
+}
+
+/* Add spinning animation for loading states */
+.icon-spin {
+    -webkit-animation: icon-spin 2s infinite linear;
+    animation: icon-spin 2s infinite linear;
+}
+
+@-webkit-keyframes icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}

@@ -1,0 +1,202 @@
+/* KDJ International School - Teacher Portal Styles */
+:root {
+    --primary-color: #2196F3;
+    --secondary-color: #333;
+    --accent-color: #FFC107;
+    --success-color: #4CAF50;
+    --danger-color: #f44336;
+    --warning-color: #ff9800;
+    --info-color: #00bcd4;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fa;
+    color: var(--secondary-color);
+}
+
+.container-scroller {
+    overflow: hidden;
+    position: relative;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.navbar-brand h4 {
+    color: var(--primary-color);
+    margin: 0;
+    font-weight: 600;
+}
+
+.navbar-brand-wrapper {
+    background: white;
+    padding: 0 1rem;
+}
+
+.navbar-menu-wrapper {
+    padding: 0 2rem;
+}
+
+/* User Profile Styles */
+.img-xs {
+    width: 32px;
+    height: 32px;
+}
+
+.img-md {
+    width: 48px;
+    height: 48px;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+}
+
+/* Dropdown Styles */
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.dropdown-item {
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s;
+}
+
+.dropdown-item:hover {
+    background: var(--light-color);
+    color: var(--primary-color);
+}
+
+.dropdown-header {
+    background: var(--light-color);
+    padding: 1rem;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Icons */
+.icon-menu {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.dropdown-item-icon {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .navbar-menu-wrapper {
+        padding: 0 1rem;
+    }
+}
+
+/* Dashboard Cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card-title {
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background: #1976D2;
+    border-color: #1976D2;
+    transform: translateY(-2px);
+}
+
+/* Forms */
+.form-control {
+    border: 2px solid #eee;
+    border-radius: 6px;
+    padding: 0.75rem;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(33, 150, 243, 0.25);
+}
+
+/* Tables */
+.table {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead th {
+    background: var(--light-color);
+    border-bottom: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    padding: 1rem;
+}
+
+.table td {
+    padding: 1rem;
+    vertical-align: middle;
+}
+
+/* Alerts */
+.alert {
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.alert-success {
+    background: rgba(76, 175, 80, 0.1);
+    color: var(--success-color);
+}
+
+.alert-danger {
+    background: rgba(244, 67, 54, 0.1);
+    color: var(--danger-color);
+}
+
+/* Utilities */
+.text-primary { color: var(--primary-color) !important; }
+.text-success { color: var(--success-color) !important; }
+.text-danger { color: var(--danger-color) !important; }
+.text-warning { color: var(--warning-color) !important; }
+.text-info { color: var(--info-color) !important; }
+
+.bg-primary { background-color: var(--primary-color) !important; }
+.bg-success { background-color: var(--success-color) !important; }
+.bg-danger { background-color: var(--danger-color) !important; }
+.bg-warning { background-color: var(--warning-color) !important; }
+.bg-info { background-color: var(--info-color) !important; }
